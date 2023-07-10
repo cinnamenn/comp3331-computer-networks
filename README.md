@@ -7,9 +7,11 @@ There are sender and receiver sides, the sender send out the packet and receiver
   />
 
 **Segment:** (might be lost when receiving from both sender and receiver side)
+
 STP segments contatin type(2 bytes), seqno(2 bytes), and date(0 to MSS bytes -> depends on window size)
 
 **The types of segment with it states value:**
+
 DATA (0): After the connection build successfully, the data starts to be sent by sender.
 ACK (1): When receiver recieve the packet from sender, it send ACK packet with it's corresponding seqno.
 SYN(2): The first packet sent by sender to build the connection with receiver.
